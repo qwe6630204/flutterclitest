@@ -1,8 +1,8 @@
 name: F4LabCIRelease
 on:
   push:
-    tags:
-      - "release-v*"
+#     tags:
+#       - "release-v*"
 
 jobs:
   release-to-gitHub:
@@ -27,4 +27,4 @@ jobs:
         with:
           files: build/app/outputs/apk/release/*.apk
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
