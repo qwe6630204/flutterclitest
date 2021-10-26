@@ -27,4 +27,4 @@ jobs:
         with:
           files: build/app/outputs/apk/release/*.apk
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
